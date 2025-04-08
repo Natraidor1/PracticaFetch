@@ -4,10 +4,7 @@ import React from "react";
 const CardDragonBall = ({Character}) =>{
     return(
         <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white border border-gray-200 m-4">
-            <img 
-            className="h-54 object-cover mx-auto"
-            src={Character.image} 
-            alt={Character.image} />
+            <img className="h-54 object-cover mx-auto" src={Character.image} alt={Character.name}/>
 
             <div className="px-6 py-4">
                 <h2 className="font-bold text-xl mb-2 text-gray-800">{Character.name}</h2>

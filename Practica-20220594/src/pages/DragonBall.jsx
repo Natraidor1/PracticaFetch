@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import CardDragonBall from "../components/CardDragonBall";
+import { data } from "react-router";
 
 
 const DragonBall = () =>{
 
-    const apiUrl = 'https://dragonball-api.com/api/characters';
+    const apiUrl = "https://dragonball-api.com/api/characters";
     const [characters, setCharacters] = useState([])
     const [loading, setLoading] = useState(true)
 
@@ -33,9 +34,9 @@ const DragonBall = () =>{
             {loading ?(
                 <p>Cargando personajes...</p>
             ):(
-                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {characters.map((character) => (
-                        <CardDragonBall key={character.id} character={characters}/>
+                <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                    {characters.map((Character) => (
+                        <CardDragonBall key={Character.id} Character={Character}/>
                      ))}
                 </div>
             )}

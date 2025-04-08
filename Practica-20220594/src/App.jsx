@@ -1,13 +1,19 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router"; 
-import './App.css'
+import DragonBall from "./pages/DragonBall";
+import Nav from "./components/nav";
+import Home from "./pages/Home";
+
 
 function App() {
 
   return (
   <>
     <Router>
+      <Nav/>
         <Routes>
-            <Route/>
+            <Route path="/" element = {<Home/>} />
+            <Route path="/DragonBallZ" element = {<DragonBall/>} />
+            
         </Routes>
     </Router>
 
