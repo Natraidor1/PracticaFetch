@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardMorty = (character) =>{
+const CardMorty = ({character}) =>{
 
     return(
 
@@ -12,16 +12,16 @@ const CardMorty = (character) =>{
             <p className="text-gray-600 text-sm mb-4">Personaje de la serie Rick And Morty</p>
             <div className="text-gray-700 text-sm">
                 <p>
-                    <span className="font-semibold">Status:</span>{character.status}
+                    <span className="font-semibold">Status: </span>{character.status}
                 </p>
                 <p>
-                    <span className="font-semibold">Species:</span>{character.species}
+                    <span className="font-semibold">Species: </span>{character.species}
                 </p>
                 <p>
-                    <span className="font-semibold">Gender:</span>{character.gender}
+                    <span className="font-semibold">Gender: </span>{character.gender}
                 </p>
                 <p>
-                    <span className="font-semibold">Origin:</span>{character.origin.name}
+                    <span className="font-semibold">Origin: </span>{character.origin.name}
                 </p>
             </div>
         </div>
@@ -31,3 +31,5 @@ const CardMorty = (character) =>{
 };
 
 export default CardMorty;
+
+
